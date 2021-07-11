@@ -1,0 +1,74 @@
+body {
+    background-color: hsl(233, 47%, 7%);
+    margin: 15px;
+    height: 100vh;
+    font-size: 15px;
+}
+
+.container {
+    top: 20%;
+    align-content: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.card-image {
+    background: linear-gradient(hsl(282deg 100% 49% / 63%), hsl(282deg 100% 49% / 63%)), url(images/image-header-desktop.jpg);
+    background-size: cover;
+    border-radius: 0px 5px 5px 0px;
+}
+
+a {
+    color: hsl(277, 64%, 61%);
+    text-decoration: none;
+}
+
+.card-text {
+    background-color: hsl(244, 38%, 16%);
+    padding: 65px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.stat-heading {
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.milestones * {
+    text-transform: uppercase;
+}
+
+.row {
+    top: 50% !important;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+}
+
+.milestones {
+    margin-top: 50px;
+    position: initial;
+}
+
+.main-paragraph {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+@media(max-width: 767px) {
+    .card-text {
+        order: 1;
+        padding: 40px;
+        border-radius: 0px 0px 5px 5px;
+    }
+    p {
+        text-align: center;
+        color: hsla(0, 0%, 100%, 0.75)
+    }
+    .card-image {
+        order: 0;
+        height: 300px;
+        border-radius: 5px 5px 0px 0px;
+    }
+    .container {
+        top: 10%
+    }
+}
